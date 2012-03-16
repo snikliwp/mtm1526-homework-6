@@ -6,6 +6,7 @@
 	<link href="css/general.css" rel="stylesheet">
 </head>
 <body>
+<div class="bigform">
 	<h2>Registration Form</h2>
 	<form>
 		<fieldset>
@@ -41,7 +42,7 @@
 		<br>
 		</fieldset>
 		<fieldset>
-		<h4>Enter your City, Country and Postal Code / Zip</h3>
+		<h4>Enter your City, Country and Postal Code / Zip</h4>
 			<input type="radio" id="canada" name="country">
 			<label for= "canada">Canada</label>
 			<input type="radio" id="us" name="country">
@@ -51,14 +52,20 @@
 				<label for="city">City</label>
 				<input id="city" name="city">
 			</div>
-			<div class = "canus"></div>
+			<br>
+			<div class = "canus">
+			</div>
+			
 		</fieldset>
 		<div><br></div>
-		<button type="submit">Submit</button>
+		<div class="butn">
+			<button type="submit">Submit</button>
+		</div>
 	</form>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script src="js/forms.js"></script>
+</div>
 </body>
 </html>
 

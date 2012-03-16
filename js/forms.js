@@ -3,6 +3,7 @@ $(document).ready(function () {
 	var passStrength = 0;
 	var passw = "";
 	var passw2 = "";
+	var countrycache = [];
 	
 	// On change: whenever a user commits a change to a text field by:
 	//  1. moving to another field
@@ -140,6 +141,7 @@ $(document).ready(function () {
 		} else {
 			$('.req-spec').removeClass('met2');
 		}
+		
 		if (pass == passw) {
 			$('.pwstatus').removeClass('unavailable');
 			$('.pwstatus').html('✔ The passwords match.').addClass('available');
@@ -149,13 +151,63 @@ $(document).ready(function () {
 		}
 	});
 
+
+		$('#canada').on('click', function (ev) {
+			$('.canus').load('provinces.html')
+/*			if (countrycache['canada']){
+				console.log(countrycache['canada']);
+			countrycache['canada'];
+				
+		} else {
+			countrycache['canada'] = $('.canus').load('provinces.html');
+				console.log(countrycache['canada']);
+			countrycache['canada'];
+		}
+*/	});
+
+		$('#us').on('click', function (ev) {
+			$('.canus').load('states.html')
+/*		var button = $(this).val();  // Gets the user input from the form field
+			if (countrycache['us']){
+			$('.canus').innerHTML = countrycache['us'];
+		} else {
+			countrycache['us'] = $('.canus').load('page'.concat('states.html'));
+			$('.canus').innerHTML = countrycache['us'];
+		}
+*/	});
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
 	
 	$('form').on('submit', function (ev) {
 		
-		if (passStrength < 5 || $('.status').hasClass('unavailable')) {
+		if (passStrength < 5 || $('.unstatus').hasClass('unavailable') || $('.emstatus').hasClass('unavailable') || $('.pwstatus').hasClass('unavailable')) {
 			ev.preventDefault();
 		}
 		

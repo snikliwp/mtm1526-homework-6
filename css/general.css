@@ -6,6 +6,24 @@
 .unavailable {
 	color: #f33;
 }
+html {
+	width: 100%;
+	background-color: #999;
+	
+}
+
+h2 {
+	padding: 1em 0 0 1em;
+}
+.butn {
+	padding: 1em;
+}
+
+.bigform {
+	width: 500px;
+	margin: auto;
+	background-color: #FFC;
+}
 
 .available {
 	color: #393;
@@ -29,6 +47,10 @@
 	font-weight: bold;
 	color: #f33;
 	font-size: 1.25em;
+}
+
+.code {
+	padding-top: 1em;
 }
 
 .pass-reqs li.met:before {
