@@ -2,30 +2,58 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Form Usability</title>
+	<title>Registration Form</title>
 	<link href="css/general.css" rel="stylesheet">
 </head>
 <body>
-	
+	<h2>Registration Form</h2>
 	<form>
-		
+		<fieldset>
+		<h4>Enter your Username and Password</h3>
 		<div>
 			<label for="username">Username</label>
-			<input id="username"> <span class="status unavailable"></span>
+			<input id="username"> <span class="unstatus unavailable"></span>
 		</div>
-		
+		<br>
+		<div>
+			<label for="email">E-Mail</label>
+			<input type="email" id="email" name="email" placeholder="123@abc.com"> <span class="emstatus unavailable"></span>
+		</div>
+		<br>
 		<div>
 			<label for="password">Password</label>
-			<input type="password" id="password">
-			<ul class="pass-reqs">
-				<li class="req-length">At least 6 characters long</li>
-				<li class="req-low">1 lower case letter</li>
-				<li class="req-up">1 upper case letter</li>
-				<li class="req-num">1 number</li>
-				<li class="req-spec">1 special character</li>
-			</ul>
+			<input type="password" id="password"> <span class="pwstatus unavailable"></span>
+			<div><br></div>
+			<label for="password2">Retype Your Password</label>
+			<input type="password" id="password2">
+			<div><br></div>
+			<fieldset>
+			<legend>Password Requirements</legend>
+				<ul class="pass-reqs">
+					<li class="req-length"><span class = 'tmp'>At least 6 characters long</span></li>
+					<li class="req-low"><span class = 'tmp'>1 lower case letter,</span></li>
+					<li class="req-up"><span class = 'tmp'>1 upper case letter</span></li>
+					<li class="req-num"><span class = 'tmp'>1 number</span></li>
+					<li class="req-spec"><span class = 'tmp'>1 special character</span></li>
+				</ul>
+			</fieldset>
 		</div>
-		
+		<br>
+		</fieldset>
+		<fieldset>
+		<h4>Enter your City, Country and Postal Code / Zip</h3>
+			<input type="radio" id="canada" name="country">
+			<label for= "canada">Canada</label>
+			<input type="radio" id="us" name="country">
+			<label for= "us">United States</label>
+			<div><br></div>
+			<div>
+				<label for="city">City</label>
+				<input id="city" name="city">
+			</div>
+			<div class = "canus"></div>
+		</fieldset>
+		<div><br></div>
 		<button type="submit">Submit</button>
 	</form>
 	

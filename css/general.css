@@ -14,6 +14,15 @@
 .pass-reqs {
 	list-style-type: none;
 }
+.pass-reqs li {
+	display: block;
+}
+
+.tmp {
+	padding-left: 1em;
+	min-width: 11em;
+	display: inline-block;
+}
 
 .pass-reqs li:before {
 	content: "✖";
@@ -26,6 +35,18 @@
 	content: "✔";
 	color: #393;
 }
+.pass-reqs li:after {
+	content: "✖";
+	font-weight: bold;
+	color: #f33;
+	font-size: 1.25em;
+}
+
+.pass-reqs li.met2:after {
+	content: "✔";
+	color: #393;
+}
+
 
 
 
